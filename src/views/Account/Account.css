@@ -1,0 +1,50 @@
+.account-choice {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 14px;
+}
+
+.account-choice:active {
+    background-color: color-mix(in srgb, black, transparent 75%);
+}
+
+.account-choice h2 {
+    font-size: 16px;
+}
+
+.account-choice-icon,
+.account-choice-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-choice-icon {
+    gap: 1rem;
+    justify-self: start;
+}
+
+.account-choice-nav {
+    gap: 0.5rem;
+    justify-self: end;
+}
+
+.account-section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    height: fit-content;
+}
+
+.account-section.choices {
+    padding: 0;
+}
+
+.account-section.choices hr {
+    margin: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

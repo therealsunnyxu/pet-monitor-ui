@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset label {
+    display: flex;
+    justify-content: start;
+}
+
+fieldset#remember-me-fieldset {
+    flex-direction: row !important;
+}

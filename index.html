@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="/src/index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Cam</title>
+  <script>
+    (function () {
+      const theme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      console.log(theme, prefersDark);
+      if (!prefersDark || theme === "light") return;
+
+      document.documentElement.classList.add("dark");
+
+    })();
+  </script>
+</head>
+
+<body class="bg-zinc-200 dark:bg-zinc-900">
+  <div id="loading">
+    <h1>Pet Cam</h1>
+    <p>by therealsunnyxu</p>
+  </div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
